@@ -1,0 +1,60 @@
+@import "../../pallete.less";
+
+@bar-height: 90px;
+
+.bar {
+    z-index: 10;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: background-color 200ms ease-in, box-shadow 200ms ease-in, height 200ms ease-in;
+    height: @bar-height;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    &.filled{
+        height: 60px;
+        background-color: @color1;
+        box-shadow: 0px 5px 20px #0003;
+        backdrop-filter: blur(10px);
+    }
+    &.default-filled{
+      
+        background-color: @color1;
+        box-shadow: 0px 5px 20px #0003;
+        backdrop-filter: blur(10px);
+    }
+
+    .icon {
+        margin: auto 10px;
+        height: calc(100%  - 10px);
+        width: 20%;
+        // background-color: aqua;
+        background-image: url("/birdIcon.png");
+        background-position: left center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .routes {
+        margin: 0 10px 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+
+        a {
+            transition: color 200ms ease-in;
+            text-align: center;
+            font-size: 20px;
+            color: @text;
+            // font-weight: bold;
+            text-decoration: none;
+            &:hover{
+                color: lighten(@text,50);
+            }
+        }
+    }
+
+
+}
