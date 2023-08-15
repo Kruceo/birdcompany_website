@@ -19,7 +19,7 @@ export default function Bar(props) {
                 <div class='routes'>
                     <A href="/">Main</A>
                     <A href="/howitworks">How it works</A>
-                    <A href="/bar">About us</A>
+                    <A href="/about">About us</A>
                 </div>
         </div>
     </>

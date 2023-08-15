@@ -9,20 +9,20 @@ export default function Homepage() {
       <Bar></Bar>
       <div className="homepage-wallpaper" >
         <div class="message1">
-          <h2>Imaginativa </h2>
+          <h1>Imaginativa </h1>
           <h3>Design Studio</h3>
           <button>🐦‍⬛ Enjoy</button>
         </div>
 
         <div class="message2">
-          <h2>Flying beyond the
-            <br /><span>Expectations</span></h2>
+          <h1>Flying beyond the
+            <br /><span>Expectations</span></h1>
         </div>
       </div>
       <Content>
         <section class="section1">
           <dir class="text">
-            <h1>Your product has more beuty than you know!</h1>
+            <h1>Your product has more beauty than you know!</h1>
             <p>A good take can show up all details.</p>
           </dir>
 

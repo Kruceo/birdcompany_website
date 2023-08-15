@@ -1,0 +1,30 @@
+@import "../../pallete.less";
+.about{
+    .sect0{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        .profile-desc{
+            background-color: lighten(@background,5);
+            display: flex;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0px 10px 20px #0002;
+            .text{
+                padding: 10px;
+                h2{
+                    width: fit-content;
+                }
+            }
+            img{
+                width: 128px;
+            }
+        }
+    }
+    .sect1{
+        .grid{
+            gap: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+        }
+    }
+}

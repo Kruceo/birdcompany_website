@@ -14,4 +14,13 @@ h2 {
     color: @color2;
     margin: 0;
     font-size: 36px;
+    width: fit-content;
+    &::after{
+        margin-top: 7px;
+        display: block;
+        content: "";
+        width: 25%;
+        height: 5px;
+        background-color: @inverse-text;
+    }
 }
