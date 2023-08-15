@@ -5,7 +5,7 @@ import "./Homepage.less"
 import Footer from "../essential/Footer";
 export default function Homepage() {
   return (
-    <main>
+    <main class="home">
       <Bar></Bar>
       <div className="homepage-wallpaper" >
         <div class="message1">
