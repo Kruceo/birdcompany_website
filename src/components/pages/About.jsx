@@ -1,5 +1,7 @@
 import Bar from "../essential/Bar";
+import Box from "../essential/Box";
 import Content from "../essential/Content";
+import Footer from "../essential/Footer";
 import HideItem from "../essential/HideItem";
 import "./About.less"
 export default function About() {
@@ -7,43 +9,72 @@ export default function About() {
         <Bar filled></Bar>
         <section class="sect0">
             <Content class="start">
-                <div class="profile-desc">
-                    <img src="/bird3.png" alt="" />
+                <Box class="profile-desc">
+
                     <div class="text">
-                        <h2>Imaginativa</h2>
+                        <h1>Imaginativa <span>Design Studio</span></h1>
                         <p>
-                            a Imaginativa Design Studio é uma empresa de design ficticea, fundada em 2023 com o objetivo de facilitar o acesso e conversação entre uma gama de designers com diversos estilos e pensamentos.
+                            The Imaginativa Design Studio is a fictional design company founded in 2023. Our mission is to promote accessibility and interaction among a range of designers with diverse styles and perspectives.
                         </p>
                     </div>
-                </div>
-                {/* <img src="/image18.png" alt="" /> */}
+                    <img src="/image11.png" alt="bird-image" />
+                </Box>
             </Content>
         </section>
         <section class="sect1">
-            <Content class="start">
-            <div className="grid">
-               <HideItem buttonContent="Qual o nosso objetivo?">
-                   <p>
-                    Levar com qualidade e rapidez o acesso a todo tipo estilo para pessoas e empresas.
-                   </p>
-               </HideItem>
-               <HideItem buttonContent="Qual o nosso objetivo?">
-                   <p>
-                    Levar com qualidade e rapidez o acesso a todo tipo estilo para pessoas e empresas.
-                   </p>
-               </HideItem>
-               <HideItem buttonContent="Qual o nosso objetivo?">
-                   <p>
-                    Levar com qualidade e rapidez o acesso a todo tipo estilo para pessoas e empresas.
-                   </p>
-               </HideItem>
-               <HideItem buttonContent="Qual o nosso objetivo?">
-                   <p>
-                    Levar com qualidade e rapidez o acesso a todo tipo estilo para pessoas e empresas.
-                   </p>
-               </HideItem>
-               </div>
+            <Content class="">
+                <h2>Why choose us</h2>
+                <br></br>
+                <div className="grid">
+
+                    <HideItem buttonContent={<h3>What Inspires Us?</h3>}>
+                        <p>
+                            Our inspiration stems from the pursuit of innovation. We love creative challenges and constantly seek new trends and technologies that can elevate design to a higher level.
+                        </p>
+                    </HideItem>
+
+                    <HideItem buttonContent={<h3>How We Work</h3>}>
+                        <p>
+                            Our working process is collaborative and customer-centered. From conception to implementation, we value transparent communication to ensure that each project meets expectations and deadlines.
+                        </p>
+                    </HideItem>
+
+                    <HideItem buttonContent={<h3>Behind the Studio</h3>}>
+                        <p>
+                            Get to know the talented team at Imaginativa Design Studio. We are designers, illustrators, and technical experts passionate about creating exceptional visual solutions that turn ideas into reality.
+                        </p>
+                    </HideItem>
+
+                    <HideItem buttonContent={<h3>Our Mission</h3>}>
+                        <p>
+                            Our mission is to inspire and impact through design. We strive to exceed expectations, providing our clients with a unique design experience and results that speak for themselves.
+                        </p>
+                    </HideItem>
+                </div>
             </Content>
         </section>
+
+        <section class="sect2">
+            <Content>
+                <div className="grid">
+                    <Box>
+                        <h1>You with all benefits</h1>
+                        <p><span class="bullet"></span> Competitive prices</p>
+                        <p><span class="bullet"></span> High qualified team</p>
+                        <p><span class="bullet"></span> On-time delivery</p>
+                        <p><span class="bullet"></span> Creative and innovative design </p>
+                        <p><span class="bullet"></span> Colaborative approach</p>
+                        <p><span class="bullet"></span> Exclusive personalized solution for each client</p>
+                        <p><span class="bullet"></span> High quality client service</p>
+                        <p><span class="bullet"></span> Atention for all details</p>
+                        <p><span class="bullet"></span> Late project accompaniment</p>
+                        <p><span class="bullet"></span> Experience in a diversity of design areas </p>
+                    </Box>
+                    <Box></Box>
+                </div>
+
+            </Content>
+        </section>
+        <Footer></Footer>
     </main>
 }

@@ -21,7 +21,10 @@ export default function HideItem(props){
     return <div id={id}  class={`hide-item ${hidden()?"hidden":""} ${props.class??""}`}>
         <div onclick={()=>{
             handler()
-        }} class="button">{props.buttonContent??"Press this"}</div>
+        }} class="button">
+            {props.buttonContent??"Press this"}
+            <div class="expand-symbol"/>
+        </div>
         <div class="hidden-content-frame">
             <div class="hidden-content">
             {props.children}

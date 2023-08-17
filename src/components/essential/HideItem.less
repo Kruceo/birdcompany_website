@@ -4,10 +4,38 @@
     background-color: #fff;
     overflow: hidden;
     height: fit-content;
-    // padding: 10px;
-    .button{
+    cursor: pointer;
+    .button {
+        display: flex;
         padding: 10px;
+
+        .expand-symbol {
+            transition: rotate 250ms ease, content 125ms ease;
+            height: 100%;
+            margin: auto 0;
+            margin-left: auto;
+            // background-color: red;
+            font-size: 24px;
+            opacity: .5;
+            font-weight: bold;
+            &::after{
+                font-family: monospace;
+                content: "−";
+            }
+        }
     }
+
+    &.hidden {
+        .button {
+            .expand-symbol {
+                rotate: 180deg;
+                &::after{
+                    content: "+";
+                }
+            }
+        }
+    }
+
     .hidden-content-frame {
         height: 0px;
         overflow: hidden;
@@ -15,6 +43,7 @@
         transition: height 250ms ease;
         display: flex;
         position: relative;
+
         .hidden-content {
             padding: 10px;
             position: absolute;
