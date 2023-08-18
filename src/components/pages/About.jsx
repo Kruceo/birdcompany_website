@@ -1,6 +1,7 @@
 import Bar from "../essential/Bar";
 import Box from "../essential/Box";
 import Content from "../essential/Content";
+import DesignerCard from "../essential/DesignerCard";
 import Footer from "../essential/Footer";
 import HideItem from "../essential/HideItem";
 import "./About.less"
@@ -75,6 +76,20 @@ export default function About() {
 
             </Content>
         </section>
+        <section class="sect3">
+            <Content>
+                <h2>Our team</h2>
+                <div class="grid">
+                    <DesignerCard width="200px" height="200px" title="Mia H." src="/person1.png"/>
+                    <DesignerCard width="200px" height="200px" title="Joana S." src="/person2.png"/>
+                    <DesignerCard width="200px" height="200px" title="Kevin M." src="/person3.png"/>
+                    <DesignerCard width="200px" height="200px" title="Alisson T." src="/person4.png"/>
+                    <DesignerCard width="200px" height="200px" title="Denis O." src="/person5.png"/>
+                </div>
+            </Content>
+        </section>
         <Footer></Footer>
     </main>
 }
+
+

@@ -1,5 +1,45 @@
 @import "./pallete.less";
 
+@font-face {
+    font-family: 'Dosis';
+    src: url('./assets/fonts/Dosis/Dosis-VariableFont_wght.ttf') format('truetype'); /* Replace with your font file path */
+    /* You can include additional font formats for compatibility with different browsers */
+    /* eot, woff, woff2, svg, etc. */
+    font-weight: normal; /* or specific weight */
+    font-style: normal; /* or italic, oblique */
+}
+@font-face {
+    font-family: 'Dosis';
+    src: url('./assets/fonts/Dosis/Dosis-VariableFont_wght.ttf') format('truetype'); /* Replace with your font file path */
+    /* You can include additional font formats for compatibility with different browsers */
+    /* eot, woff, woff2, svg, etc. */
+    font-weight: bold; /* or specific weight */
+    font-style: normal; /* or italic, oblique */
+}
+@font-face {
+    font-family: 'Dosis';
+    src: url('./assets/fonts/Dosis/Dosis-VariableFont_wght.ttf') format('truetype'); /* Replace with your font file path */
+    /* You can include additional font formats for compatibility with different browsers */
+    /* eot, woff, woff2, svg, etc. */
+    font-weight: 100; /* or specific weight */
+    font-style: normal; /* or italic, oblique */
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url('./assets/fonts/Indie_Flower/IndieFlower-Regular.ttf') format('truetype'); /* Replace with your font file path */
+    /* You can include additional font formats for compatibility with different browsers */
+    /* eot, woff, woff2, svg, etc. */
+    font-weight: normal; /* or specific weight */
+    font-style: normal; /* or italic, oblique */
+}
+
+*{
+    font-family: Dosis;
+    box-sizing: border-box;
+    color: @inverse-text;        
+}
+
 body {
     background: @background;
 }
@@ -7,13 +47,13 @@ p{
     font-size: 18px;
 }
 h1 {
-    color: @color2;
+    // color: @color2;
     margin: 0;
     font-size: 56px;
 }
 
 h2 {
-    color: @color2;
+    // color: @color2;
     margin: 0;
     font-size: 36px;
     width: fit-content;
@@ -21,9 +61,10 @@ h2 {
         margin-top: 7px;
         display: block;
         content: "";
-        width: 25%;
-        height: 5px;
+        width: 20%;
+        height: 4px;
         background-color: @inverse-text;
+        border-radius: 100px;
     }
 }
 

@@ -18,7 +18,7 @@
                 }
             }
             img{
-                width: 512px;
+                width: 312px;
                 margin-left: 50%;
                 margin-top: 50px;
                 transform: translateX(-50%);
@@ -35,7 +35,11 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr ;
             .hide-item{
-                // background-color: lighten(@background,1%);
+
+                // background-color: @color3;
+                .button{
+                    // color: @text;
+                }
             }
         }
     }
@@ -74,6 +78,19 @@
                 background-size: contain;
                 background-image: url("/image18.png");
                 background-repeat: no-repeat;
+            }
+        }
+    }
+    .sect3{
+        padding: 100px 0;
+        background-color: lighten(@background,3);
+        .grid{
+            margin-top: 75px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            .designer-card{
+                background-color: @color1;
+                box-shadow: @shadow;
             }
         }
     }
