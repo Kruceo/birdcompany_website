@@ -153,7 +153,11 @@
                 width: 100%;
                 background-position: 50%;
                 height: 210px;
-                background-size:240px 240px;
+                background-size: cover;
+                @media @min768 {
+                    
+                    background-size:240px 240px;
+                }
                 transition: background-size 250ms cubic-bezier(0.115, 0.610, 0.155, 1);
                 &:hover{
                    background-size:300px 300px;
