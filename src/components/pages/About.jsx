@@ -80,11 +80,11 @@ export default function About() {
             <Content>
                 <h2>Our team</h2>
                 <div class="grid">
-                    <DesignerCard width="200px" height="200px" title="Mia H." src="/person1.png"/>
-                    <DesignerCard width="200px" height="200px" title="Emilia S." src="/person2.png"/>
-                    <DesignerCard width="200px" height="200px" title="Kevin M." src="/person3.png"/>
-                    <DesignerCard width="200px" height="200px" title="Emma T." src="/person4.png"/>
-                    <DesignerCard width="200px" height="200px" title="Denis O." src="/person5.png"/>
+                    <DesignerCard width="160px" height="160px" title="Mia H." src="/person1.png"/>
+                    <DesignerCard width="160px" height="160px" title="Emilia S." src="/person2.png"/>
+                    <DesignerCard width="160px" height="160px" title="Kevin M." src="/person3.png"/>
+                    <DesignerCard width="160px" height="160px" title="Emma T." src="/person4.png"/>
+                    <DesignerCard width="160px" height="160px" title="Juremar O." src="/person5.png"/>
                 </div>
             </Content>
         </section>

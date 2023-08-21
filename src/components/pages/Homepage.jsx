@@ -7,7 +7,7 @@ export default function Homepage() {
   return (
     <main class="home">
       <Bar></Bar>
-      <div className="homepage-wallpaper" >
+      <div class="homepage-wallpaper" >
         <div class="message1">
           <h1>Imaginativa </h1>
           <h3>Design Studio</h3>
@@ -31,10 +31,9 @@ export default function Homepage() {
         </section>
       </Content>
       <div class="card-grid-bg">
-        
         <Content>
         <h2>Take a look in some styles!</h2>
-          <div className="card-grid">
+          <div class="card-grid">
             <Card image="/image1.png"  title="Logo and Icons Creation">Titulo</Card>
             <Card image="/image2.png" title="Product Showcase"></Card>
             <Card image="/image3.png" title="Minimalist Illustration">Titulo</Card>
