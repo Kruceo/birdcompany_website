@@ -1,6 +1,7 @@
 import Bar from "../essential/Bar";
 import Content from "../essential/Content";
 import Footer from "../essential/Footer";
+import MobileBar from "../essential/MobileBar";
 import "./HowItWorks.less"
 export default function HowItWorks() {
     return <main>

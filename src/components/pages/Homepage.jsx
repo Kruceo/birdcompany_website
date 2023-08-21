@@ -3,17 +3,13 @@ import Bar from "../essential/Bar";
 import Content from "../essential/Content";
 import "./Homepage.less"
 import Footer from "../essential/Footer";
+import MobileBar from "../essential/MobileBar";
 export default function Homepage() {
   return (
     <main class="home">
       <Bar></Bar>
+      {/* <MobileBar></MobileBar> */}
       <div class="homepage-wallpaper" >
-        <div class="message1">
-          <h1>Imaginativa </h1>
-          <h3>Design Studio</h3>
-          <button>🐦‍⬛ Enjoy</button>
-        </div>
-
         <div class="message2">
           <h1>Flying beyond the
             <br /><span>Expectations</span></h1>

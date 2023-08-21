@@ -7,6 +7,10 @@
             .text{
                 margin: auto;
                 display: flex;
+                flex-direction: column;
+                @media @min768 {
+                    flex-direction: row;
+                }
                 gap: 50px;
                 // padding: 10px;
                 h1{
@@ -18,7 +22,16 @@
                 }
             }
             img{
-                width: 312px;
+                @media @min0 {
+                    display: none;
+                    width: 0px;
+
+                }
+                @media @min768{
+                    display: block;
+                    width: 312px;
+                }
+                
                 margin-left: 50%;
                 margin-top: 50px;
                 transform: translateX(-50%);
@@ -33,7 +46,13 @@
         .grid{
             gap: 10px;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            @media @min768 {
+                grid-template-columns: 1fr 1fr ;    
+            }
+            @media @min968 {
+                grid-template-columns: 1fr 1fr 1fr 1fr ;    
+            }
+            
             .hide-item{
 
                 // background-color: @color3;
@@ -49,7 +68,10 @@
         .grid{
             gap: 10px;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
+            @media @min768 {
+                grid-template-columns: 1fr 1fr 1fr ;    
+            }
             padding: 10px;
             min-height: 400px;
             .box{
@@ -74,6 +96,10 @@
                 }
             }
             .box:nth-child(2){
+                @media @min768 {
+                    visibility: visible;
+                }
+                visibility: hidden;
                 background-position: center;
                 background-size: contain;
                 background-image: url("/image18.png");
@@ -87,7 +113,19 @@
         .grid{
             margin-top: 75px;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            gap: 20px;
+            grid-template-columns: 1fr;
+            // overflow-x: auto;
+            
+            @media @min468 {
+                grid-template-columns: 1fr 1fr ;    
+            }
+            @media @min768 {
+                grid-template-columns: 1fr 1fr 1fr 1fr ;    
+            }
+            @media @min968 {
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;    
+            }
         }
     }
 }
